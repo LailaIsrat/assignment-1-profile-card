@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        :root{
+            --button-border-color:#6420AA;
+            --button-text-color:#FFFF;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 400;
+            min-height: 100vh;
+            background:url("body_bg.jpg") #030728 no-repeat center ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* overlay: rgba(0,0,0,0.75);*/
+        
+        }
+     
+        .card{
+            height:auto;
+            width: 250px;
+            margin: auto;
+            color:#ffff;
+            padding:35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 5px;
+            backdrop-filter: blur(30px);
+            background: rgba(255,255,255,0.09);
+        }
+
+        .description{
+            font-size: 13px;
+            line-height: 1.6em;
+        }
+        .profile-image{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            border: 2px solid #ffff;
+            padding: 4px;
+        }
+        .buttons-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .buttons-container button{
+            padding: 5px 8px;
+            border: 1px solid var(--button-border-color);
+            border-radius: 5px;
+            color:var(--button-text-color) ;
+        }
+        .buttons-container .follow{
+            background: transparent;
+        }
+        .buttons-container .hire-me{
+            background: var(--button-border-color);
+        }
+    </style>
+
+
+</head>
+<body>
+    <!-- Style the text inside the card, including the name, occupation, short description and contact details.
+
+
+Experiment with different font sizes, colors, and alignments. -->
+
+    <div class="card-container">
+        <div class="card">
+            <img src="profile.jpg" alt="profile pic" class="profile-image">
+           
+            <h2 class="name">Laila Israt Jahan</h2>
+            <p class="occupation">Software Engineer</p>
+           
+            
+            <p class="description">A beginner software engineer is a newcomer who creates and maintains software, learning and working under more experienced developers.</p>
+
+            <div class="contact-details"></div>
+            <div class="following-details"></div>
+            <div>
+                <div class="buttons-container">
+                    <button class="follow">Follow</button>
+                    <button class="hire-me">Hire Me</button>
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+
+</body>
+</html>
